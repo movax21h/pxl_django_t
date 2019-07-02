@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
-from . import view,pxl-api
+from . import view
+from . import pxl-api
 
 urlpatterns = [
-    url(r'^$',view.hello),
-	url(r'^ip$',pxl-ip.clientip),
-	path('admin/', admin.site.urls),
-]
+	url(r'^$',view.hello),
+	url(r'^ip$',pxl-ip.clientip),]
+	#path('admin/', admin.site.urls),
