@@ -21,5 +21,5 @@ from . import pxlapi
 
 urlpatterns = [
 	url(r'^$',view.hello),
-	url(r'^ip$',pxlip.clientip),]
+	url(r'^ip$',pxlapi.clientip),]
 	#path('admin/', admin.site.urls),
