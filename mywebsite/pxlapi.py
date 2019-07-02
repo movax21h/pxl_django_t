@@ -3,5 +3,5 @@ from django.shortcuts import render
  
 def clientip(request):
 	context = {}
-	context['clientip'] = dir(request)
+	context['clientip'] = dir(request.GET())
 	return render(request,'clientip.html',context)
