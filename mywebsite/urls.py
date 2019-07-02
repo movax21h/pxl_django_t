@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
 from . import view
-from . import pxl-api
+from . import pxlapi
 
 urlpatterns = [
 	url(r'^$',view.hello),
