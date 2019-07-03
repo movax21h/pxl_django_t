@@ -18,8 +18,10 @@ from django.urls import path
 from django.conf.urls import url
 from . import view
 from . import pxlapi
+from django.conf.urls import handler404
 
 urlpatterns = [
 	url(r'^$',view.hello),
 	url(r'^ip$',pxlapi.clientip),]
+handler404 = view.page_not_found
 	#path('admin/', admin.site.urls),
