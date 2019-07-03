@@ -5,5 +5,5 @@ from django.shortcuts import render_to_response
 def hello(request):
     return HttpResponse("Hello world ! ")
 def page_not_found(request):
-	html = u"<html><h1>ÄãÒªµÄ¶«Î÷²¢²»´æÔÚ<h1></html>".encode()
+	html = u"<html><h1>ä½ è¦çš„ä¸œè¥¿å¹¶ä¸å­˜åœ¨<h1></html>".encode()
 	return HttpResponse(html)
