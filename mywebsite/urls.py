@@ -23,6 +23,6 @@ from django.conf.urls import handler404,handler500
 urlpatterns = [
 	url(r'^$',view.hello),
 	url(r'^ip$',pxlapi.clientip),]
-handler404 = view.page_not_found
-handler500 = view.page_not_found
+handler404 = 'mywebsite.view.page_not_found'
+handler500 = 'mywebsite.view.page_error'
 	#path('admin/', admin.site.urls),
