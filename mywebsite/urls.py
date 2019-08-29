@@ -18,11 +18,14 @@ from django.urls import path
 from django.conf.urls import url
 from . import view
 from . import pxlapi
+from . import testdb
 from django.conf.urls import handler404,handler500
 
 urlpatterns = [
 	url(r'^$',view.hello),
-	url(r'^ip$',pxlapi.clientip),]
+	url(r'^ip$',pxlapi.clientip),
+	url(r'^addname',testdb.testdb),
+	url(r'^read',testdb.testread),]
 handler404 = 'mywebsite.view.page_not_found'
 handler500 = 'mywebsite.view.page_error'
 	#path('admin/', admin.site.urls),
